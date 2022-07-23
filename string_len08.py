@@ -8,4 +8,7 @@ def main(s):
     Returns:
         str: answer
     """
-    return
+    k = len(s)
+    if k % 2 == 1:
+        return s[k // 2 + 1]
+    return s[k // 2] + s[k // 2 + 1]
